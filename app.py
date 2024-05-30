@@ -120,6 +120,7 @@ input_summary = {
     "Online Order": "Yes" if online_order else "No"
 }
 input_summary_df = pd.DataFrame([input_summary])
-st.table(input_summaray_df)
+#st.table(input_summaray_df)
+st.markdown(input_summaray_df.style.hide(axis="index").to_html(), unsafe_allow_html=True)
 
 
