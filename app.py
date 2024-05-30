@@ -120,5 +120,7 @@ input_summary = {
     "Online Order": "Yes" if online_order else "No"
 }
 input_summary_df = pd.DataFrame([input_summary])
-st.table(input_summary_df.style.hide(axis="index"))
+st.dataframe(input_summary_df.set_index(input_summary_df.columns[0]))
+#st.table(input_summary_df.style.hide(axis="index"))
+
 
