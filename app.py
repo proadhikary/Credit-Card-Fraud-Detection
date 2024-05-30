@@ -109,10 +109,10 @@ if st.button("Predict Fraud", use_container_width=True):
 # Display input summary in a larger and clearer format
 st.subheader("Summary")
 input_summary = {
-    "Distance from Home (miles)": distance_from_home,
-    "Distance from Last Transaction (miles)": distance_from_last_transaction,
-    "Purchased Price of Transaction ($)": purchased_price_transaction,
-    "Median Purchase Price ($)": median_purchase_price,
+    "Distance from Home (Kilometers)": distance_from_home,
+    "Distance from Last Transaction (Kilometers)": distance_from_last_transaction,
+    "Purchased Price of Transaction (₹)": purchased_price_transaction,
+    "Median Purchase Price (₹)": median_purchase_price,
     "Ratio to Median Purchase Price": ratio_to_median_purchase_price,
     "Repeat Retailer": "Yes" if repeat_retailer else "No",
     "Used Chip": "Yes" if used_chip else "No",
